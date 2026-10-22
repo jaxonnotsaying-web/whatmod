@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071426">
+  <title>WHAT MOD — Mods for Every Game</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="WHAT MOD home"><span class="brand-icon">✦</span><span>WHAT <b>MOD</b><small>Mods for every game</small></span></a>
+    <nav>
+      <a class="nav-link active" href="#home">⌂ <span>Home</span></a>
+      <a class="nav-link" href="#browse">▦ <span>Browse Mods</span></a>
+      <a class="nav-link" href="#how">ⓘ <span>How It Works</span></a>
+    </nav>
+    <div class="account-actions"><button class="btn btn-outline" id="loginBtn">Log In</button><button class="btn btn-primary" id="signupBtn">Sign Up</button></div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> YOUR NEXT FAVORITE MOD STARTS HERE</div>
+        <h1>Make every game<br>feel <span>brand new.</span></h1>
+        <p>Discover creations from the community, explore new ways to play, and share your own mods with the world.</p>
+        <div class="hero-actions"><a class="btn btn-primary btn-large" href="#browse">Explore Mods <span>→</span></a><button class="btn btn-glass btn-large" id="heroUpload">＋ Upload a Mod</button></div>
+        <div class="hero-stats"><div><b>Community-powered</b><small>Made by players, for players</small></div><div><b>Safety-first review</b><small>Checks before public release</small></div></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative gaming artwork">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="cube cube-back">✦</div><div class="cube cube-main">WM</div><div class="cube cube-small">+</div>
+        <div class="floating-card card-top"><span class="mini-icon green">✓</span><div><b>Creator tools</b><small>Share your ideas</small></div></div>
+        <div class="floating-card card-bottom"><span class="mini-icon purple">✧</span><div><b>New worlds await</b><small>Find your next favorite</small></div></div>
+        <div class="art-caption">THE MODDING MULTIVERSE</div>
+      </div>
+    </section>
+
+    <section class="search-row" id="browse">
+      <div><h2>Explore the universe</h2><p>Find something new for your next session.</p></div>
+      <label class="searchbox"><span>⌕</span><input id="searchInput" type="search" placeholder="Search mods, games, or creators..."><kbd>ENTER</kbd></label>
+    </section>
+
+    <section class="categories">
+      <button class="category active" data-game="All"><span class="cat-icon all">✦</span><span><b>All Games</b><small>Everything in one place</small></span></button>
+      <button class="category" data-game="Minecraft"><span class="cat-icon mine">▦</span><span><b>Minecraft</b><small>Blocks & adventures</small></span></button>
+      <button class="category" data-game="Roblox"><span class="cat-icon roblox">◇</span><span><b>Roblox</b><small>Experiences & extras</small></span></button>
+      <button class="category" data-game="Other"><span class="cat-icon other">🎮</span><span><b>Other Games</b><small>More games welcome</small></span></button>
+    </section>
+
+    <section class="section-head"><div><h2>Featured mods <span class="spark">✦</span></h2><p>Community picks to get you started.</p></div><span class="demo-label">SAMPLE LISTINGS</span></section>
+    <section class="mod-grid" id="modGrid">
+      <article class="mod-card" data-game="Minecraft" data-search="enchanted forests minecraft adventure nature">
+        <div class="mod-cover cover-forest"><span class="cover-symbol">♧</span><span class="cover-tag">ADVENTURE</span></div>
+        <div class="mod-content"><div class="mod-meta"><span>MINECRAFT</span><span class="status-dot">● SAMPLE</span></div><h3>Enchanted Forests</h3><p>Discover mysterious groves, glowing plants, and new places to explore.</p><div class="mod-footer"><span>★ 4.8 <i>·</i> 12.4k downloads</span><button class="details-btn" data-title="Enchanted Forests">Details ↗</button></div></div>
+      </article>
+      <article class="mod-card" data-game="Roblox" data-search="parkour plus roblox obby movement challenge">
+        <div class="mod-cover cover-neon"><span class="cover-symbol">↗</span><span class="cover-tag">CHALLENGE</span></div>
+        <div class="mod-content"><div class="mod-meta"><span>ROBLOX</span><span class="status-dot">● SAMPLE</span></div><h3>Parkour Plus</h3><p>Extra movement challenges and creative obstacle-course ideas.</p><div class="mod-footer"><span>★ 4.6 <i>·</i> 8.2k downloads</span><button class="details-btn" data-title="Parkour Plus">Details ↗</button></div></div>
+      </article>
+      <article class="mod-card" data-game="Minecraft" data-search="cozy builder minecraft building tools blocks">
+        <div class="mod-cover cover-build"><span class="cover-symbol">⌂</span><span class="cover-tag">BUILDING</span></div>
+        <div class="mod-content"><div class="mod-meta"><span>MINECRAFT</span><span class="status-dot">● SAMPLE</span></div><h3>Cozy Builder Kit</h3><p>A sample listing for tools and ideas to help bring builds to life.</p><div class="mod-footer"><span>★ 4.7 <i>·</i> 6.9k downloads</span><button class="details-btn" data-title="Cozy Builder Kit">Details ↗</button></div></div>
+      </article>
+      <article class="mod-card" data-game="Other" data-search="space survival other games exploration sci fi">
+        <div class="mod-cover cover-space"><span class="cover-symbol">✧</span><span class="cover-tag">EXPLORATION</span></div>
+        <div class="mod-content"><div class="mod-meta"><span>OTHER GAMES</span><span class="status-dot">● SAMPLE</span></div><h3>Deep Space Discovery</h3><p>Explore a fictional starfield packed with new discovery concepts.</p><div class="mod-footer"><span>★ 4.5 <i>·</i> 3.1k downloads</span><button class="details-btn" data-title="Deep Space Discovery">Details ↗</button></div></div>
+      </article>
+    </section>
+    <div class="notice"><span class="notice-icon">ⓘ</span><div><b>This is the first website prototype</b><p>These are sample listings, not real downloadable mods. Accounts, cloud uploads, AI scanning, and virtual-machine testing need to be connected before launch.</p></div></div>
+
+    <section class="how-section" id="how">
+      <div class="section-head"><div><h2>Simple for creators. Safer for players.</h2><p>Our planned upload process, designed with safety in mind.</p></div></div>
+      <div class="steps">
+        <div class="step"><span class="step-number">01</span><span class="step-icon">👤</span><h3>Create an account</h3><p>Log in to manage your creator profile and submissions.</p></div>
+        <div class="step"><span class="step-number">02</span><span class="step-icon">📦</span><h3>Upload your mod</h3><p>Add the file, game, version, screenshots, and description.</p></div>
+        <div class="step"><span class="step-number">03</span><span class="step-icon">🛡️</span><h3>Run safety checks</h3><p>Scanning and isolated testing flag suspicious files for review.</p></div>
+        <div class="step"><span class="step-number">04</span><span class="step-icon">🚀</span><h3>Publish when approved</h3><p>Only submissions that meet your review rules become public.</p></div>
+      </div>
+    </section>
+  </main>
+  <footer><a class="brand footer-brand" href="#"><span class="brand-icon">✦</span><span>WHAT <b>MOD</b><small>Mods for every game</small></span></a><p>Built for curious players and creative makers.</p><span class="footer-note">Prototype · Version 0.1</span></footer>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="closeModal" aria-label="Close">×</button>
+      <div class="modal-mark">✦</div><h2 id="modalTitle">Welcome to WHAT MOD</h2><p id="modalDescription">Accounts are not connected yet. This prototype shows where sign-in will go.</p>
+      <form id="demoForm"><label>Email address<input type="email" placeholder="you@example.com" required></label><label>Password<input type="password" placeholder="At least 8 characters" minlength="8" required></label><button class="btn btn-primary btn-full" type="submit" id="modalSubmit">Continue</button></form>
+      <small class="modal-foot">Demo only — no account will be created or stored.</small>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
